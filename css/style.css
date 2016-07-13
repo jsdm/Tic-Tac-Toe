@@ -1,0 +1,23 @@
+.container {
+  margin: auto;
+}
+.game {
+  margin-top: 50px;
+}
+.field {
+  background-color: black;
+  height: 150px;
+  width: 150px;
+}
+.field-left {
+  border-right: solid 2px white;
+}
+.field-right {
+  border-left: solid 2px white;
+}
+.field-top {
+  border-bottom: solid 2px white;
+}
+.field-bottom {
+  border-top: solid 2px white;
+}
