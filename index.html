@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/ui-darkness/jquery-ui.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/app.js" ></script>
   <meta charset="UTF-8">
   <title>Tic Tac Toe</title>
 </head>
 <body>
   <div class="container game">
   <div class="row">
-    <div class="col-md-4 field field-left field-top"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-col-mid field-top"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-right field-top"><span>&nbsp</span></div>
+    <h1 class="head">Welcome to Tic Tac Toe</h1>
+    <h3 class="headSub"></h3>
   </div>
-  <div class="row">
-    <div class="col-md-4 field field-left field-row-mid"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-col-mid field-row-mid"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-right field-row-mid"><span>&nbsp</span></div>
+    <div class="row">
+      <div class="col-md-4 field field-left field-top field-TL" value=1><span>&nbsp</span></div><div class="col-md-4 field field-col-mid field-top field-TM" value=2><span>&nbsp</span></div><div class="col-md-4 field field-right field-top field-TR" value=3><span>&nbsp</span></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 field field-left field-row-mid field-ML" value="4"><span>&nbsp</span></div><div class="col-md-4 field field-col-mid field-row-mid field-MM" value="5"><span>&nbsp</span></div><div class="col-md-4 field field-right field-row-mid field-MR" value="6"><span>&nbsp</span></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 field field-left field-bottom field-BL" value="7"><span>&nbsp</span></div><div class="col-md-4 field field-col-mid field-bottom field-BM" value="8"><span>&nbsp</span></div><div class="col-md-4 field field-right field-bottom field-BR" value="9"><span>&nbsp</span></div>
+    </div>
+    <div class="row startdiv">
+      <a class="start" href="#">Start</a>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-4 field field-left field-bottom"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-col-mid field-bottom"><span>&nbsp</span></div>
-    <div class="col-md-4 field field-right field-bottom"><span>&nbsp</span></div>
+
+  <div class="close" id="overlay">
+    <div id="modal">
+      <span class="close">X</span>
+      <h2 class="headr">Choose X or Y</h2>
+      <div>
+        <p class="x">X </p>
+        <p> or </p>
+        <p class="o"> O</p>
+        <p>?</p>
+      </div>
+    </div>
   </div>
-  <div id="dialogwindow" style="display:none;">
-    <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
-  </div>
-  <p><a href="#ex1" class="loginbtn" rel="modal:open">Open Modal</a></p>
-</div>
 </body>
 </html>
